@@ -4,7 +4,7 @@
 
 我想让学校图书馆的领导知道，网站这种东西想做的好看一点，其实也没那么难。哈工大是一流的学校，工大图书馆也是一流的图书馆，请不要再让我们忍受一个不入流的网站。
 
-![Screenshot](https://github.com/HIT-ON-Github/hitlib2/raw/master/Screenshot.png)
+![Screenshot](https://raw.githubusercontent.com/HIT-BlueLine/hitlib2/master/screenshot-pc.png)
 
 ##TODO
 * 期刊查询和论文查询（话说这两个功能真的有人用吗？。。。）
