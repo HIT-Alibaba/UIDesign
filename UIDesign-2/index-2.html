@@ -1,7 +1,6 @@
 ﻿<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <title>Calculator</title>
     <link href="./static/2/page.css" rel="stylesheet" />
     <link href="./static/2/style.css" rel="stylesheet" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -14,6 +13,9 @@
 
     <article class="article">
         <div class="calculator demo">
+            <div class="head">
+                <button id="calulator-button-swich-skin" class="u4 button button-blue" onclick="window.location.href='index.html'; ">switch skin</button>
+            </div>
             <div class="u4 display">
                 <div class="display-inner"><div class="display-text" data-bind="text: display"></div></div>
             </div>
@@ -43,6 +45,35 @@
 
     <script src="./static/2/knockout-2.1.0.js"></script>
     <script src="./static/2/calculator.js"></script>
+    <script>
+        // Load native UI library
+
+            var gui = require('nw.gui');
+
+            var win = gui.Window.get();
+
+    //创建window menu
+
+            var windowMenu = new gui.Menu({ type: 'menubar' });
+
+            var windowSubmenu = new gui.Menu();
+
+            var subMenuItem = new gui.MenuItem({ label: '更换皮肤' });
+            subMenuItem.click = function() {
+                window.location.href="index.html";
+            }
+
+            windowSubmenu.append(subMenuItem);
+
+            windowMenu.append(
+
+                new gui.MenuItem({ label: '选项', submenu: windowSubmenu })
+
+                );
+
+            win.menu = windowMenu;
+            
+    </script>
 
 </body>
 </html>

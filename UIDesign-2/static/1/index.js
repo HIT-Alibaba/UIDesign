@@ -17,6 +17,9 @@ for(var i = 0; i < keys.length; i++) {
 			input.innerHTML = '';
 			decimalAdded = false;
 		}
+		if(btnVal == 'switch skin'){
+			window.location.href="index-2.html"; 
+		}
 		
 		// If eval key is pressed, calculate and display the result
 		else if(btnVal == '=') {

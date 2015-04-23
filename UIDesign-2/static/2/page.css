@@ -1,7 +1,6 @@
 ﻿html {
 	height: 100%;
-	background: white;
-	background: radial-gradient(circle, #fff 20%, #ccc);
+	background-color: rgba(200, 200, 200, 0.7);
 	background-size: cover;
 }
 

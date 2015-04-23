@@ -1,9 +1,13 @@
 <html>
 <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <link rel="stylesheet" href="./static/1/index.css">
 </head>
 <body>
 <div id="calculator">
+	<div class="head">
+		<span class="switch_skin">switch skin</span>
+	</div>
 	<!-- Screen and clear key -->
 	<div class="top">
 		<span class="clear">C</span>
@@ -34,5 +38,34 @@
 <!-- PrefixFree -->
 <script src="./static/1/prefixfree-1.0.7.js" type="text/javascript"></script>
 <script src="./static/1/index.js" type="text/javascript"></script>
+<script>
+	// Load native UI library
+
+        var gui = require('nw.gui');
+
+        var win = gui.Window.get();
+
+//创建window menu
+
+        var windowMenu = new gui.Menu({ type: 'menubar' });
+
+        var windowSubmenu = new gui.Menu();
+
+        var subMenuItem = new gui.MenuItem({ label: '更换皮肤' });
+        subMenuItem.click = function() {
+        	window.location.href="index-2.html";
+        }
+
+        windowSubmenu.append(subMenuItem);
+
+        windowMenu.append(
+
+            new gui.MenuItem({ label: '选项', submenu: windowSubmenu })
+
+            );
+
+        win.menu = windowMenu;
+        
+</script>
 </body>
 </html>

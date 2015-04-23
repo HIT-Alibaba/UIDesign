@@ -13,9 +13,7 @@
 /* A nice BG gradient */
 html {
 	height: 100%;
-	background: white;
-	background: radial-gradient(circle, #fff 20%, #ccc);
-	background-size: cover;
+	background-color: rgba(31, 185, 216, 0.7);
 }
 
 /* Using box shadows to create 3D effects */
@@ -30,6 +28,52 @@ html {
 	background: linear-gradient(#9dd2ea, #8bceec);
 	border-radius: 3px;
 	box-shadow: 0px 4px #009de4, 0px 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+.head {overflow: hidden;}
+
+.head span{
+	loat: left;
+	position: relative;
+	top: 0;
+	
+	cursor: pointer;
+	
+	width: 126px;
+	height: 36px;
+	
+	background: white;
+	border-radius: 3px;
+	box-shadow: 0px 4px rgba(0, 0, 0, 0.2);
+	
+	margin: 0 7px 11px 0;
+	
+	color: #888;
+	line-height: 36px;
+	text-align: center;
+	
+	/* prevent selection of text inside keys */
+	user-select: none;
+	
+	/* Smoothing out hover and active states using css3 transitions */
+	transition: all 0.2s ease;
+}
+
+.head span.switch_skin {
+	background: #f1ff92;
+	box-shadow: 0px 4px #9da853;
+	color: #888e5f;
+}
+
+.head span.switch_skin:hover {
+	background: #abb850;
+	box-shadow: 0px 4px #717a33;
+	color: #ffffff;
+}
+
+.head span.switch_skin:active {
+	box-shadow: 0px 0px #717a33;
+	top: 4px;
 }
 
 /* Top portion */
@@ -64,7 +108,8 @@ html {
 
 /* Applying same to the keys */
 .keys span, .top span.clear {
-	float: left;
+
+float: left;
 	position: relative;
 	top: 0;
 	
