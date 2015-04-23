@@ -1,0 +1,60 @@
+﻿html {
+	height: 100%;
+	background: white;
+	background: radial-gradient(circle, #fff 20%, #ccc);
+	background-size: cover;
+}
+
+.body {
+	color: #606471;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+
+.header {
+    height: 140px;
+	line-height: 140px;
+	text-align: center;
+}
+
+.article {
+	height: 450px;
+	position: relative;
+}
+
+.demo.calculator {
+	-moz-box-shadow: inset 0px 1px #7b839b, 0 2px 5px rgba(0,0,0,.5);
+	-webkit-box-shadow: inset 0px 1px #7b839b, 0 2px 5px rgba(0,0,0,.5);
+	box-shadow: inset 0px 1px #7b839b, 0 2px 5px rgba(0,0,0,.5);
+	position: absolute;
+	margin: auto;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	height: 240px;
+}
+
+.footer {
+	color: #9B9DA7;
+	padding: 60px 0;
+    text-align: center;
+}
+
+.bold {
+	font-weight: bold;
+}
+.h1 {
+	font-size: 20px;
+}
+
+.p {
+	margin-bottom: 8px;
+}
+.link {
+	color: #6399F1;
+	text-decoration: none;
+}
+	.link:hover {
+		text-decoration: underline;
+	}
